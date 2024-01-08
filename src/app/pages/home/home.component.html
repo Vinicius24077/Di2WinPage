@@ -1,0 +1,46 @@
+<main class="D-flexCollumn">
+
+  <app-testar-gratis></app-testar-gratis>
+
+  <app-sobre></app-sobre>
+
+  <div class="line"></div>
+
+  <div class="area-segmentos-solucoes">
+
+    <h1>NOSSAS <span>SOLUÇÕES</span></h1>
+
+    <app-carrossel [telas]="arrayCarrossel"></app-carrossel>
+  </div>
+
+  <section class="dados-numericos">
+    <app-dados-numericos></app-dados-numericos>
+  </section>
+
+  <section class="arqs-exports">
+
+    <h2>TIPOS DE ARQUIVOS <span>EXPORTADOS</span></h2>
+
+    <div>
+
+      <app-card-arq type="TEXT" img="../../../assets/icones-arqs/text.svg"></app-card-arq>
+      <app-card-arq type="PDF" img="../../../assets/icones-arqs/pdf.svg"></app-card-arq>
+      <app-card-arq type="WORD" img="../../../assets/icones-arqs/word.svg"></app-card-arq>
+      <app-card-arq type="EXCEL" img="../../../assets/icones-arqs/excel.svg"></app-card-arq>
+
+    </div>
+
+  </section>
+
+  <app-btn-contato></app-btn-contato>
+
+  <section class="auxilio">
+    <h2>COMO O EXTRAIDADOS AUXILIA OS <br><span>SERVIÇOS FINANCEIROS</span></h2>
+    <div class="area-vantagens">
+
+      <app-vantagem *ngFor="let advantage of advantageList" [num]="advantage.num" [title]="advantage.title" [text]="advantage.text"></app-vantagem>
+
+    </div>
+  </section>
+
+</main>

@@ -1,0 +1,57 @@
+header {
+  width: 100%;
+  background-color: #fff;
+  padding: 1.8rem;
+  box-shadow: 0 0px 15px #c2c2c2;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+@media (min-width: 1023px) {
+
+   .smartphone {
+    display: none;
+  }
+
+  header {
+    padding: 1.8rem 5rem 1.8rem 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+@media (min-width: 672px) and (max-width: 1023px) {
+
+  .desktop {
+    display: none;
+  }
+
+  header {
+    padding: 1.8rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 671px) {
+
+  header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+}

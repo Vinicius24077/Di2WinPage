@@ -1,0 +1,111 @@
+main {
+  padding-bottom: 0;
+}
+
+div.area-segmentos-solucoes {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+div.area-segmentos-solucoes h1 span {
+  color: var(--pink-Di2win);
+}
+
+@media (max-width: 671px) {
+  div.area-segmentos-solucoes h1 {
+    font-size: 1.5rem;
+  }
+
+  section.arqs-exports h2 {
+    font-size: 1.1rem;
+  }
+}
+
+section.arqs-exports {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section.arqs-exports span {
+  color: var(--pink-Di2win);
+}
+
+section.arqs-exports h2 {
+  margin-bottom: 1rem;
+}
+
+section.arqs-exports div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+section.auxilio {
+  background-image: url(../../../assets/fundo2.svg);
+  background-size: cover;
+}
+
+section.auxilio h2 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+section.auxilio h2 span{
+  color: var(--pink-Di2win);
+  position: absolute;
+  right: -2rem;
+  font-weight: bold;
+}
+
+section.auxilio div.area-vantagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 690px) {
+
+  section.auxilio {
+    padding: 1.5rem;
+    background-attachment: fixed;
+  }
+
+  section.auxilio h2 {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2rem;
+    font-size: .9rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: start;
+    width: 100%;
+  }
+
+  section.auxilio h2 span{
+    color: var(--pink-Di2win);
+    position: inherit;
+    font-size: 1.2rem;
+    right: -2rem;
+    font-weight: bold;
+  }
+
+  section.auxilio div.area-vantagens {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,38 @@
+<nav>
+
+  <ul>
+    <li>
+      <p (click)="openMenu($event.target)" class="link">SOLUÇÕES</p> <img src="../../../../assets/arrow.svg" alt="">
+      <div class="drop hidden" (mouseleave)="closeMenu($event.target)">
+        <p (click)="showOptions($event.target)">FINANCEIRO</p>
+        <div class="secondDrop" style="display: none;">
+          <a href="">CRI</a>
+          <a routerLink="/fidc">FIDC</a>
+          <a href="">FACTORING</a>
+          <a href="">FINTECH</a>
+        </div>
+        <div class="line"></div>
+        <p>...</p>
+      </div>
+    </li>
+    <li>
+      <p (click)="openMenu($event.target)" class="link">PRODUTOS</p> <img src="../../../../assets/arrow.svg" alt="">
+      <div class="drop hidden" (mouseleave)="closeMenu($event.target)">
+        <p class="noPointer">EXTRAI DADOS</p>
+        <div class="line"></div>
+        <p class="noPointer">...</p>
+      </div>
+    </li>
+    <li>
+      <a [routerLink]="'/feedback'" class="link">FEEDBACK</a>
+    </li>
+    <li>
+      <a [routerLink]="'/faq'" class="link">DÚVIDAS FREQUENTES</a>
+    </li>
+    <li>
+      <app-button text="ENTRAR" link="https://www.extraidados.com.br/autenticacao/entrar"></app-button>
+    </li>
+  </ul>
+
+</nav>
+

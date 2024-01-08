@@ -1,0 +1,112 @@
+.container-carrossel {
+  background-color: #fff;
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid var(--pink-Di2win);
+  border-left: 2px solid var(--pink-Di2win);
+  /* border-top: 1px solid var(--pink-Di2win);
+  border-right: 1px solid var(--pink-Di2win); */
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #c3c3c3;
+}
+
+.container-carrossel::-webkit-scrollbar {
+  display: none;
+}
+
+.carrossel {
+  position: absolute;
+  width: max-content;
+  display: flex;
+  left: 0;
+  transition: left ease 1s;
+  z-index: 0;
+}
+
+.container-btn-carrossel {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container-btn-carrossel button {
+  padding: .3rem;
+  margin-left: 5px;
+  border-radius: 100px;
+  border: 0;
+}
+
+.btn-carrossel {
+  transition: background .5s;
+  cursor: pointer;
+
+}
+
+.btn-disable {
+  background-color: #444;
+}
+
+.btn-active {
+  background-color: var(--pink-Di2win);
+}
+
+.caixa {
+  width: 600px;
+  height: 300px;
+  padding: 2rem 1rem 1rem 2rem;
+  position: relative;
+}
+
+.caixa p {
+  font-size: .9rem;
+  width: 60%;
+}
+
+.caixa img {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  height: 6.5rem;
+}
+
+.caixa h2 {
+  margin-bottom: 1rem;
+  color: var(--pink-Di2win);
+}
+
+@media (max-width: 671px) {
+  .container-carrossel {
+    width: 20rem;
+    height: 300px;
+  }
+
+  .caixa {
+    width: 20rem;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .caixa p, .caixa h2 {
+    margin: 0 auto 1rem auto;
+  }
+
+  .caixa p {
+    font-size: .8rem;
+    width: 90%;
+  }
+
+  .caixa img {
+    opacity: .2;
+  }
+
+  button.btn-carrossel {
+    width: 12px;
+    height: 12px;
+  }
+}
